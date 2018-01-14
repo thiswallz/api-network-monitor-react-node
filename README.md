@@ -32,6 +32,9 @@ Inside the root folder, there is a file for configurate all services you want to
 It is: services.conf.js
 
 #### Examples of configurations: 
+You only need to configurate this file in order to work with the website.
+
+Example inside (services.conf.js):
 ```
 module.exports = [
   {
@@ -141,7 +144,9 @@ module.exports = [
 
 In the end you will have localhost:8080 for react and localhost:3000 for the general API.
 
+####REACT/REDUX/THUX
 ![Alt text](reactapp.JPG?raw=true "React app")
+####CONFIGURATION FILE API
 ![Alt text](services.JPG?raw=true "Services")
 
 ## Built With
