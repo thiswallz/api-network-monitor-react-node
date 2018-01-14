@@ -35,9 +35,9 @@ It is: services.conf.js
 
 There are already three environments in the app. You can extend id if you want.
 
--dev: Development
--qa: Staging
--prod: Production
+- dev: Development
+- qa: Staging
+- prod: Production
 
 You can configure the services for each environment.
 
