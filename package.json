@@ -1,0 +1,49 @@
+{
+  "name": "simple-services-monitor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "repository": "",
+  "scripts": {
+    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
+    "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
+    "test:watch": "npm run test -- --watch"
+  },
+  "author": "Mauricio Joost Wolff",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.2.1",
+    "babel-loader": "^6.2.0",
+    "babel-preset-es2015": "^6.1.18",
+    "babel-preset-react": "^6.1.18",
+    "chai": "^3.5.0",
+    "chai-jquery": "^2.0.0",
+    "file-loader": "^1.1.5",
+    "image-webpack-loader": "^3.4.2",
+    "jquery": "^2.2.1",
+    "jsdom": "^8.1.0",
+    "mocha": "^2.4.5",
+    "react-addons-test-utils": "^0.14.7",
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.0"
+  },
+  "dependencies": {
+    "axios": "^0.16.2",
+    "babel-preset-stage-1": "^6.1.18",
+    "ftp": "^0.3.10",
+    "httpdispatcher": "^2.1.0",
+    "lodash": "^3.10.1",
+    "ping": "^0.2.2",
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3",
+    "react-redux": "4.3.0",
+    "react-router": "^2.0.1",
+    "redux": "^3.0.4",
+    "redux-actions": "^2.2.1",
+    "redux-promise": "^0.5.3",
+    "redux-thunk": "^2.2.0",
+    "shortid": "^2.2.8",
+    "soap": "^0.23.0",
+    "ssh2-sftp-client": "^2.0.1"
+  }
+}
