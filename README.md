@@ -144,9 +144,9 @@ module.exports = [
 
 In the end you will have localhost:8080 for react and localhost:3000 for the general API.
 
-####REACT/REDUX/THUX
+####REACT/REDUX/THUX__
 ![Alt text](reactapp.JPG?raw=true "React app")
-####CONFIGURATION FILE API
+####CONFIGURATION FILE API__
 ![Alt text](services.JPG?raw=true "Services")
 
 ## Built With
