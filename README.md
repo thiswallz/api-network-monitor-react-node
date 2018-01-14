@@ -1,6 +1,6 @@
 # API/Network Monitoring Tools - React/Redux/Node 
 
-Back-end: This is a (mostly) pure JavaScript implementation using current libs adn node. 
+Back-end: This is a (mostly) pure JavaScript implementation using current libs and node. 
 Front-end: This was made with Reactjs, Redux, Thux.
 
 The code is clean in order to learn from there and extend it.
@@ -19,20 +19,38 @@ You need to install nodejs before
 Once you get node, you need to install the packages from package.json, then run react and nodejs separatly.
 
 ```
-> git clone https://github.com/thiswallz/redue.git
-> cd redu
+> git clone https://github.com/thiswallz/api-network-monitor-react-node
+> cd api-network-monitor-react-node
 > npm i
 > node server.js
 > npm start 
 
 ```
-### Services configurations
+## Services configurations
 
-Inside the root folder, there is a file for configurate all services you want to TEST, 
+Inside the root folder, there is a file for configurating all services you want to TEST, 
 It is: services.conf.js
 
+### Environments
+
+There are three environments already in the app. You can extend id if you want.
+
+> dev: Development
+> qa: Staging
+> prod: Production
+
+You can configure the services for each environment.
+
+### Extra Options
+
+You can use functions to filter data or return logic errors.
+
+processOk(response) : boolean = When you get an "OK" from the API, but you need to check the response to be sure, you can use processOk, this is a wrapper-function. If you return a "false" the app will show a logic-error.
+
+filter(response) : response = If the data is too big, you can filter it with this wrapper-function.
+
 #### Examples of configurations: 
-You only need to configurate this file in order to work with the website.
+You only need to configure this file in order to work with the website.
 
 Example inside (services.conf.js):
 ```
@@ -162,7 +180,7 @@ In the end you will have localhost:8080 for react and localhost:3000 for the gen
 
 * **Mauricio Joost Wolff** - *Initial work* - [GitHub](https://github.com/thiswallz)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/thiswallz/api-network-monitor-react-node/contributors) who participated in this project.
 
 ## License
 
