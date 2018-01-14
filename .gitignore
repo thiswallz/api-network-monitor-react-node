@@ -23,7 +23,6 @@ yarn-error.log*
 #idea
 .idea/
 *.iml
-*.css
 *.zip
 
 package-lock.json
