@@ -26,5 +26,4 @@ yarn-error.log*
 *.css
 *.zip
 
-# Because it brings a shit ton of problems
 package-lock.json
