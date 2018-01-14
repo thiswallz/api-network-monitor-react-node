@@ -33,7 +33,7 @@ It is: services.conf.js
 
 ### Environments
 
-There are three environments already in the app. You can extend id if you want.
+There are already three environments in the app. You can extend id if you want.
 
 > dev: Development
 
@@ -47,11 +47,12 @@ You can configure the services for each environment.
 
 You can use functions to filter data or return logic errors.
 
-processOk(response) : boolean = When you get an "OK" from the API, but you need to check the response to be sure, you can use processOk, this is a wrapper-function. If you return a "false" the app will show a logic-error.
+| F(X)          |  Param          | Return  | Detail  |
+| ------------- |:-------------:| -----:| |
+| processOk      | api response | boolean  | When you get an "OK" from the API, but you need to check the response to be sure, you can use processOk, this is a wrapper-function. If you return a "false" the app will show a logic-error.|
+| filter     | api response  |   response | If the data is too big, you can filter it with this wrapper-function.|
 
-filter(response) : response = If the data is too big, you can filter it with this wrapper-function.
-
-#### Examples of configurations: 
+### Examples of configurations: 
 You only need to configure this file in order to work with the website.
 
 Example inside (services.conf.js):
